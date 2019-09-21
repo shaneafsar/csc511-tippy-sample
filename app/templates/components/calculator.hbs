@@ -1,6 +1,6 @@
 
 
-<form onsubmit={{action 'onSubmit'}}>
+<form onsubmit={{action "onSubmit"}}>
   <fieldset>
     <legend>Calculate your tip: </legend>
 
@@ -11,21 +11,21 @@
     <hr>
 
     <label for="TipValue">Tip Amount:</label>
-    <select id="TipValue" onchange={{action 'onTipChange' value="target.value"}}>
+    <select id="TipValue" onchange={{action "onTipChange" value="target.value"}}>
       <option value="0">Select tip amount</option>
       <option value="0.15">15%</option>
       <option value="0.18">18%</option>
       <option value="0.20">20%</option>
     </select>
 
-</fieldset>
+  </fieldset>
 </form>
 
 {{#if this.showTotal}}
-<dl>
-  <dt>Tip</dt>
-  <dd>{{format-number this.tipAmount}}</dd>
-  <dt>Total</dt>
-  <dd>{{format-number this.totalBillWithTip}}</dd>
-</dl>
+  <dl>
+    <dt>Tip</dt>
+    <dd>{{format-number this.tipAmount}}</dd>
+    <dt>Total</dt>
+    <dd>{{format-number this.totalBillWithTip}}</dd>
+  </dl>
 {{/if}}

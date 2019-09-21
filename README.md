@@ -1,7 +1,16 @@
 # tippy
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a sample implementation of the CSC511 Tip Calculator project.
+
+* [x] User can enter total bill amount
+* [x] User can choose between at least three tip tiers (e.g. 15%, 18%, 20%) and see the total tip
+* [x] User can see the total with tip
+
+## Summary
+
+This impementation shows how we can use a single component to render the calculator. It uses a controller to accept a query paramter (amount) to allow a user prefill the total bill in the initial input. It also demonstrates how computed properties can be used to dynamically change elements of the page, and showcases a sample helper (format-number) to truncate the tip and bill amount to two decimal places.
+
+![Walkthrough GIF](tippy-sample.gif)
 
 ## Prerequisites
 
